@@ -141,7 +141,7 @@ php artisan serve
 
 API base URL: `http://127.0.0.1:8000/api/v1`
 
-If you use XAMPP Apache instead of `artisan serve`, point the document root at `public/` (or use `http://localhost/laravel_api_app/public`). Keep `APP_URL` in sync with that URL.
+If you use XAMPP Apache instead of `artisan serve`, point the document root at `public/` (or use `http://localhost/laravel-_api_app/public`). Keep `APP_URL` in sync with that URL.
 
 Interactive docs (local): [http://127.0.0.1:8000/docs/api](http://127.0.0.1:8000/docs/api)
 
@@ -195,7 +195,7 @@ Default `.env.example` uses SQLite. For XAMPP MySQL, use something like:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravel_api_app
+DB_DATABASE=laravel-_api_app
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -396,28 +396,6 @@ Rate limiters are defined in `AppServiceProvider::boot()`.
 
 ---
 
-
-
-## Testing
-
-PHPUnit uses in-memory SQLite (`phpunit.xml`).
-
-```bash
-php artisan test
-```
-
-or:
-
-```bash
-composer test
-```
-
-Suites:
-
-- `tests/Unit`
-- `tests/Feature`
-
----
 
 
 
